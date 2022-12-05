@@ -10,4 +10,18 @@
     return array;
 }
 
-
+string[] CreateNewArray (string[] array, int size)
+{
+    string[] newArray = new string[size];
+    int len = 3;
+    int count = 0;
+    for (int j = 0; j < size; j++)
+    {
+        if (array[j].Length <= len)
+        {
+            newArray[count] = array[j];
+            count++;
+        }
+    }
+    return newArray;
+}
