@@ -34,3 +34,13 @@ void PrintArray(string[] array)
      }
     Console.WriteLine();
 }
+
+Console.Write("Input a number of elements ");
+int size = Convert.ToInt32(Console.ReadLine());
+string[] myArray = CreateArray(size);
+Console.Write("Start array: ");
+PrintArray(myArray);
+Console.WriteLine();
+Console.Write("New array: ");
+string[] newArray = CreateNewArray(myArray, size);
+PrintArray(newArray);
