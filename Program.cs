@@ -12,16 +12,25 @@
 
 string[] CreateNewArray (string[] array, int size)
 {
-    string[] newArray = new string[size];
-    int len = 3;
-    int count = 0;
-    for (int j = 0; j < size; j++)
-    {
-        if (array[j].Length <= len)
-        {
-            newArray[count] = array[j];
-            count++;
-        }
-    }
-    return newArray;
+    string[] newArray = new string[size];
+    int len = 3;
+    int count = 0;
+    for (int j = 0; j < size; j++)
+    {
+        if (array[j].Length <= len)
+        {
+            newArray[count] = array[j];
+            count++;
+        }
+    }
+    return newArray;
+}
+
+void PrintArray(string[] array)
+{
+    for (int i = 0; i < array.Length; i++)
+    {
+     Console.Write(array[i] + " ");
+     }
+    Console.WriteLine();
 }
